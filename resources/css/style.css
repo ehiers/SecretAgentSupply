@@ -74,6 +74,7 @@ a {
   height: 2.5 rem;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 nav {
   width: 960px;
@@ -83,6 +84,11 @@ nav ul {
   justify-content: space-between;
 }
 nav li {
+}
+
+#menunav {
+  display: none;
+  justify-content: center;
 }
 
 main {
@@ -173,4 +179,69 @@ footer {
   display: flex;
   justify-content: left;
   align-items: center;
+}
+/* media query for tablet portrait orientation*/
+@media only screen and (max-width: 1024px){
+  #fullnav {
+    display: none;
+  }
+  #menunav {
+    display: block;
+  }
+  #glasses {
+    display: none;
+  }
+  .product{
+    width: 47%;
+  }
+}
+/* media query for a phone*/
+@media only screen and (max-width: 470px){
+  #watch {
+    display: none;
+  }
+  .product{
+    width: 90%;
+  }
+  #cont4{
+    justify-content: center;
+  }
+  .row2 {
+    flex-direction: column;
+    align-items: center;
+    width: 470px;
+  }
+
+  .row1 {
+    justify-content: center;
+    width: 470px;
+    }
+
+  .info {
+    width: 90%;
+    margin-bottom: 0.5rem;
+  }
+
+  h1 {
+    font-size: 0.77rem;
+  }
+  h2 {
+    font-size: 1rem;
+  }
+
+  #bigpic {
+    height: 15rem;
+  }
+  .box1 h1 {
+    padding: 0.25rem 1rem 1rem 2rem;
+  }
+  .box1 h2 {
+    padding: 1rem 3rem 0 2rem;
+  }
+  .cont1 {
+    align-items: flex-end;
+  }
+  .box1 {
+    margin-bottom: 0.5rem;
+  }
 }
